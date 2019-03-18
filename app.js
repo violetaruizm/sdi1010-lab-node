@@ -7,18 +7,11 @@ var app = express();
 
 app.set('port',8081);
 
-app.get('/usuarios',function(req,res){
+//Rutas/controladores por lógica
 
-    console.log("Depurar aquí");
-    res.send('ver usuarios');
+require("./routes/rusuarios.js")(app); // (app,param1, param2, etc)
+require("./routes/rcanciones.js")(app);// (app, param1, param2, etc)
 
-
-});
-
-
-app.get('/canciones',function(req,res){
-    res.send('ver canciones');
-});
 
 //Lanzar el servidor
 
