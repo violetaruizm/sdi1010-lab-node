@@ -1,4 +1,4 @@
-module.exports = function (app) {
+module.exports = function (app,swig) {
     app.get("/canciones", function (req, res) {
 
         var respuesta = "";

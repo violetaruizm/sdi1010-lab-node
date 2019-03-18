@@ -3,6 +3,8 @@
 var express = require("express");
 var app = express();
 
+var swig = require('swig');
+
 var bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -15,8 +17,8 @@ app.set('port',8081);
 
 //Rutas/controladores por lógica
 
-require("./routes/rusuarios.js")(app); // (app,param1, param2, etc)
-require("./routes/rcanciones.js")(app);// (app, param1, param2, etc)
+require("./routes/rusuarios.js")(app)(swig); // (app,param1, param2, etc)
+require("./routes/rcanciones.js")(app)(swig);// (app, param1, param2, etc)
 
 
 //Lanzar el servidor
