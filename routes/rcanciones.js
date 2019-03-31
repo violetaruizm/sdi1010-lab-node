@@ -98,7 +98,7 @@ module.exports = function (app, swig,gestorBD) {
                                     if (err) {
                                         res.send("Error al subir el audio");
                                     } else {
-                                        res.redirect("/publicaciones");
+                                        res.redirect("/publicaciones?mensaje=Cancion insertada correctamente");
                                     }
                                 });
                             }

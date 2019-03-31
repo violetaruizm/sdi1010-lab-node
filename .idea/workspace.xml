@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b790d3ea-e898-4860-9517-2ef8eebf6a65" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/rcanciones.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/rcanciones.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/rusuarios.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/rusuarios.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/base.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,20 +26,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/routes/rusuarios.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+            <state relative-caret-position="594">
+              <caret line="59" column="11" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/rcanciones.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="198" column="55" selection-start-line="198" selection-start-column="55" selection-end-line="198" selection-end-column="55" />
+            <state relative-caret-position="400">
+              <caret line="100" column="108" selection-start-line="100" selection-start-column="108" selection-end-line="100" selection-end-column="108" />
             </state>
           </provider>
         </entry>
@@ -49,6 +49,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
               <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/rusuarios.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="31" column="80" selection-start-line="31" selection-start-column="80" selection-end-line="31" selection-end-column="80" />
             </state>
           </provider>
         </entry>
@@ -78,15 +87,15 @@
         <option value="$PROJECT_DIR$/hello-world-server.js" />
         <option value="$PROJECT_DIR$/views/prueba.html" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/views/base.html" />
         <option value="$PROJECT_DIR$/views/tienda.html" />
         <option value="$PROJECT_DIR$/views/bagregar.html" />
         <option value="$PROJECT_DIR$/views/bcancion.html" />
         <option value="$PROJECT_DIR$/views/btienda.html" />
         <option value="$PROJECT_DIR$/modules/gestorBD.js" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/routes/rcanciones.js" />
         <option value="$PROJECT_DIR$/routes/rusuarios.js" />
+        <option value="$PROJECT_DIR$/views/base.html" />
+        <option value="$PROJECT_DIR$/routes/rcanciones.js" />
       </list>
     </option>
   </component>
@@ -191,12 +200,12 @@
       <workItem from="1553098482394" duration="3124000" />
       <workItem from="1553358953541" duration="6783000" />
       <workItem from="1553415365040" duration="3525000" />
-      <workItem from="1554020529328" duration="1907000" />
+      <workItem from="1554020529328" duration="2756000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20385000" />
+    <option name="totallyTimeSpent" value="21234000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -238,13 +247,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="61">
           <caret line="43" column="38" lean-forward="true" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="6" lean-forward="true" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -302,17 +304,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/rcanciones.js">
+    <entry file="file://$PROJECT_DIR$/routes/rusuarios.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="198" column="55" selection-start-line="198" selection-start-column="55" selection-end-line="198" selection-end-column="55" />
+        <state relative-caret-position="450">
+          <caret line="31" column="80" selection-start-line="31" selection-start-column="80" selection-end-line="31" selection-end-column="80" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/rusuarios.js">
+    <entry file="file://$PROJECT_DIR$/views/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+        <state relative-caret-position="594">
+          <caret line="59" column="11" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/rcanciones.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="100" column="108" selection-start-line="100" selection-start-column="108" selection-end-line="100" selection-end-column="108" />
         </state>
       </provider>
     </entry>
