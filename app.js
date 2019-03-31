@@ -43,6 +43,29 @@ app.use("/canciones/agregar",routerUsuarioSession);
 app.use("/publicaciones",routerUsuarioSession);
 //app.use("/audios/",routerUsuarioSession);
 
+
+//routerUsuarioAutor
+var routerUsuarioAutor = express.Router();
+routerUsuarioAutor.use(function(req, res, next) {
+    console.log("routerUsuarioAutor");
+    var path = require('path');
+    var id = path.basename(req.originalUrl);
+// Cuidado porque req.params no funciona
+// en el router si los params van en la URL.
+    gestorBD.obtenerCanciones(
+        {_id: mongo.ObjectID(id) }, function (canciones) {
+            console.log(canciones[0]);
+            if(canciones[0].autor == req.session.usuario ){
+                next();
+            } else {
+                res.redirect("/tienda");
+            }
+        })
+});
+//Aplicar routerUsuarioAutor
+app.use("/cancion/modificar",routerUsuarioAutor);
+app.use("/cancion/eliminar",routerUsuarioAutor);
+
 //routerAudios
 var routerAudios = express.Router();
 routerAudios.use(function(req, res, next) {
@@ -50,7 +73,7 @@ routerAudios.use(function(req, res, next) {
     var path = require('path');
     var idCancion = path.basename(req.originalUrl, '.mp3');
     gestorBD.obtenerCanciones(
-        {id : mongo.ObjectID(idCancion) }, function (canciones) {
+        {_id : mongo.ObjectID(idCancion) }, function (canciones) {
             if(req.session.usuario && canciones[0].autor == req.session.usuario ){
                 next();
             } else {
@@ -66,7 +89,7 @@ app.use(express.static('public'));
 //Variables
 
 app.set('port',8081);
-app.set('db','mongodb://admin:<sdi>@tiendamusica-shard-00-00-vmzus.mongodb.net:27017,tiendamusica-shard-00-01-vmzus.mongodb.net:27017,tiendamusica-shard-00-02-vmzus.mongodb.net:27017/test?ssl=true&replicaSet=tiendamusica-shard-0&authSource=admin&retryWrites=true');
+app.set('db','mongodb://admin:sdi@tiendamusica-shard-00-00-vmzus.mongodb.net:27017,tiendamusica-shard-00-01-vmzus.mongodb.net:27017,tiendamusica-shard-00-02-vmzus.mongodb.net:27017/test?ssl=true&replicaSet=tiendamusica-shard-0&authSource=admin&retryWrites=true');
 app.set('clave','abcdefg');
 app.set('crypto',crypto);
 //Rutas/controladores por lógica
