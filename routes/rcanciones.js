@@ -84,19 +84,19 @@ module.exports = function (app, swig,gestorBD) {
 // Conectarse
         gestorBD.insertarCancion(cancion, function(id){
             if (id == null) {
-                res.send("Error al insertar canción");
+                res.redirect("/cancion?mensaje=Error al guardar la canción");
             } else {
                 if (req.files.portada != null) {
                     var imagen = req.files.portada;
                     imagen.mv('public/portadas/' + id + '.png', function(err) {
                         if (err) {
-                            res.send("Error al subir la portada");
+                            res.redirect("/cancion?mensaje=Error al subir la portada");
                         } else {
                             if (req.files.audio != null) {
                                 var audio = req.files.audio;
                                 audio.mv('public/audios/'+id+'.mp3', function(err) {
                                     if (err) {
-                                        res.send("Error al subir el audio");
+                                        res.redirect("/cancion?mensaje=Error al subir el audio");
                                     } else {
                                         res.redirect("/publicaciones?mensaje=Cancion insertada correctamente");
                                     }
@@ -210,9 +210,9 @@ module.exports = function (app, swig,gestorBD) {
             } else {
                 paso1ModificarPortada(req.files, id, function (result) {
                     if( result == null){
-                        res.send("Error en la modificación");
+                        res.redirect("/cancion/modificar/:id?mensaje=Error al modificar la canción");
                     } else {
-                        res.redirect("/publicaciones");
+                        res.redirect("/publicaciones?mensaje=La canción se modificó correctamente");
                     }
                 });
             }
@@ -255,7 +255,7 @@ module.exports = function (app, swig,gestorBD) {
             if ( canciones == null ){
                 res.send(respuesta);
             } else {
-                res.redirect("/publicaciones");
+                res.redirect("/publicaciones?mensaje=La canción se eliminó correctamente");
             }});
     });
 

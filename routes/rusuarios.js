@@ -22,7 +22,13 @@ module.exports = function (app, swig,gestorBD) {
             email : req.body.email,
             password : seguro
         }
-
+        var criterio = {
+            email : req.body.email
+        }
+        gestorBD.obtenerUsuarios(criterio, function(usuarios){
+            if(usuarios!=null && usuarios.length != 0){res.redirect("/registrarse?mensaje=El email ya está registrado. Inténtelo de nuevo con un " +
+                "email diferente");}
+else{
         gestorBD.insertarUsuario(usuario,function(id){
             if(id==null){
                 //res.send("error al insertar")
@@ -31,7 +37,7 @@ module.exports = function (app, swig,gestorBD) {
                 //res.redirect("/identificarse");
                 res.redirect("/identificarse?mensaje=Nuevo usuario registrado");
             }
-        })
+        })}})
     });
 
 
