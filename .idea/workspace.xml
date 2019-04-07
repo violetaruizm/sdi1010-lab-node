@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b790d3ea-e898-4860-9517-2ef8eebf6a65" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/rcanciones.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/rcanciones.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/bcancion.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/bcancion.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello-world-server.js" beforeDir="false" afterPath="$PROJECT_DIR$/hello-world-server.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,19 +16,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/routes/rcanciones.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="176" column="12" selection-start-line="176" selection-start-column="12" selection-end-line="176" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/bcancion.html">
+        <entry file="file://$PROJECT_DIR$/hello-world-server.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+              <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -59,7 +46,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/hello-world-server.js" />
         <option value="$PROJECT_DIR$/views/prueba.html" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/views/tienda.html" />
@@ -78,10 +64,11 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/bcancion.html" />
         <option value="$PROJECT_DIR$/routes/rcanciones.js" />
+        <option value="$PROJECT_DIR$/hello-world-server.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="952" />
     <option name="width" value="977" />
     <option name="height" value="1038" />
@@ -107,11 +94,6 @@
               <item name="sdi1010-lab-node" type="b2602c69:ProjectViewProjectNode" />
               <item name="sdi1010-lab-node" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sdi1010-lab-node" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sdi1010-lab-node" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -154,7 +136,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.app.js">
+  <component name="RunManager" selected="Node.js.hello-world-server.js">
     <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" path-to-js-file="app.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -167,8 +149,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.app.js" />
         <item itemvalue="Node.js.hello-world-server.js" />
+        <item itemvalue="Node.js.app.js" />
       </list>
     </recent_temporary>
   </component>
@@ -189,12 +171,12 @@
       <workItem from="1554020529328" duration="4422000" />
       <workItem from="1554050347262" duration="1851000" />
       <workItem from="1554109789874" duration="5229000" />
-      <workItem from="1554628033204" duration="11299000" />
+      <workItem from="1554628033204" duration="11879000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41279000" />
+    <option name="totallyTimeSpent" value="41859000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -206,10 +188,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="762" y="0" width="781" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16259088" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33064517" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -221,7 +203,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295129" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3295129" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.04249292" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.042979944" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -352,8 +334,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/rcanciones.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="176" column="12" selection-start-line="176" selection-start-column="12" selection-end-line="176" selection-end-column="12" />
+        <state relative-caret-position="114">
+          <caret line="174" column="18" lean-forward="true" selection-start-line="174" selection-start-column="18" selection-end-line="174" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello-world-server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
         </state>
       </provider>
     </entry>
