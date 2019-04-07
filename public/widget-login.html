@@ -21,22 +21,25 @@
 </div>
 
 <script>
-    $("#boton-login").click(function(){
+    window.history.pushState("", "", "/cliente.html?w=login");
+    $("#boton-login").click(function () {
         $.ajax({
             url: URLbase + "/autenticar",
             type: "POST",
             data: {
-                email : $("#email").val(),
-                password : $("#password").val()
+                email: $("#email").val(),
+                password: $("#password").val()
             },
             dataType: 'json',
-            success: function(respuesta) {
+            success: function (respuesta) {
                 console.log(respuesta.token); // <- Prueba
                 token = respuesta.token;
-                $( "#contenedor-principal" ).load( "widget-canciones.html");
+                Cookies.set('token', respuesta.token);
+                $("#contenedor-principal").load("widget-canciones.html");
             },
-            error : function (error){
-                $("#widget-login" )
+            error: function (error) {
+                Cookies.remove('token');
+                $("#widget-login")
                     .prepend("<div class='alert alert-danger'>Usuario no encontrado</div>");
             }
         });
